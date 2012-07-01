@@ -281,8 +281,8 @@ this class should be done at the Class level.
     def __init__(self, name)
         """Public: Initialize a Widget.
     
-	name - A String naming the widget.
+        name - A String naming the widget.
 
-	""""
+        """"
         ...
 ```
