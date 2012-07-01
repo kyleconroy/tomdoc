@@ -1,4 +1,4 @@
-TomDoc for Ruby - Version 1.0.0-rc1
+TomDoc for Python - Version 0.0.1
 ===================================
 
 Purpose
@@ -29,27 +29,28 @@ Table of Contents
   * [Attributes](#attributes)
 
 
-<a name="method" />
 Method Documentation
 --------------------
 
 A quick example will serve to best illustrate the TomDoc method documentation
 format:
 
-    # Public: Duplicate some text an arbitrary number of times.
-    #
-    # text  - The String to be duplicated.
-    # count - The Integer number of times to duplicate the text.
-    #
-    # Examples
-    #
-    #   multiplex('Tom', 4)
-    #   # => 'TomTomTomTom'
-    #
-    # Returns the duplicated String.
-    def multiplex(text, count)
-      text * count
-    end
+```python
+def multiplex(text, count):
+    """Public: Duplicate some text an arbitrary number of times.
+ 
+    text  - The String to be duplicated.
+    count - The Integer number of times to duplicate the text.
+    
+    Examples
+    
+      multiplex('Tom', 4)
+      >>> 'TomTomTomTom'
+    
+    Returns the duplicated String.
+    """
+    return text * count
+```
 
 TomDoc for a specific method consists of a block of single comment markers (#)
 that appears directly above the method. There SHOULD NOT be a blank line
@@ -61,7 +62,6 @@ text MUST be separated from the comment marker by a single space. Lines that do
 not contain text SHOULD consist of just a comment marker (no trailing spaces).
 
 
-<a name="description" />
 ### The Description Section
 
 The description section SHOULD be in plain sentences. Each sentence SHOULD end
