@@ -54,11 +54,11 @@ def multiplex(text, count):
 TomDoc for a specific method consists of a block of single comment markers (#)
 that appears directly above the method. There SHOULD NOT be a blank line
 between the comment block and the method definition. A TomDoc method block
-consists of six optional sections: a description section, an arguments section,
-a yields section, an examples section, a returns section, and a signature
-section. Sections MUST appear in the order listed above. Lines that contain
-text MUST be separated from the comment marker by a single space. Lines that do
-not contain text SHOULD consist of just a comment marker (no trailing spaces).
+consists of four optional sections: a description section, an arguments
+section, an examples section, and a returns section. Sections MUST appear in
+the order listed above. Lines that contain text MUST be separated from the
+comment marker by a single space. Lines that do not contain text SHOULD consist
+of just a comment marker (no trailing spaces).
 
 <a name="description" />
 ### The Description Section
@@ -147,7 +147,7 @@ to how normal arguments are defined:
               :weight - The Float weight to restrict by. The weight should
                         be specified in grams (optional).
 
-Ruby allows for some interesting argument capabilities. In those cases, try
+Python allows for some interesting argument capabilities. In those cases, try
 to explain what's going on as best as possible. Examples are a good way to
 demonstrate how methods should be invoked. For example:
 
@@ -205,7 +205,7 @@ returned, state the nature and type of the value. For example:
 
 If several different types may be returned, list all of them. For example:
 
-    Returns the given element Symbol or nil if none was found.
+    Returns the given element Symbol or None if none was found.
 
 If the return value of the method is not intended to be used, then you should
 simply state:
